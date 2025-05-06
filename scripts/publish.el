@@ -42,30 +42,30 @@
            org-publish-project-alist
            `(
              ("damagebdd" :components ("damagebdd.pages" "damagebdd.static" "damagebdd.articles"))
-             ("damagebdd.pages"
-              :base-directory ,default-directory
-              :base-extension "org"
-              :publishing-directory ,(expand-file-name "public" default-directory)
-              :recursive t
-              :publishing-function org-html-publish-to-html
-              :auto-preamble t
-              :auto-sitemap t
-              :auto-index t
-              :sitemap-title "DamageBDD - BDD At Planetary Scale."
-              :sitemap-filename "sitemap.org"
-              :sitemap-sort-files anti-chronologically
-              :makeindex t
-              :sitemap-format-entry org-sitemap-date-entry-format
-              ;;:section-numbers nil
-              :with-toc nil
-              :html-doctype "html5"
-              :html-html5-fancy t
-              :html-head-include-scripts nil
-              :html-head-include-default-style nil
-              :html-head ,damagebdd-html-head
-              :html-preamble ,damagebdd-html-preamble
-              :html-postamble ,damagebdd-html-postamble
-                                        ;:sitemap-file-entry-format "%d - %t"
+           ("damagebdd.pages"
+      :base-directory ,default-directory
+      :base-extension "org"
+      :publishing-directory ,(expand-file-name "public" default-directory)
+      :recursive t
+      :publishing-function org-html-publish-to-html
+      :auto-preamble t
+      :auto-sitemap t
+      :auto-index t
+      :sitemap-title "DamageBDD - BDD At Planetary Scale."
+      :sitemap-filename "sitemap.org"
+      :sitemap-sort-files anti-chronologically
+      :makeindex t
+      :sitemap-format-entry org-sitemap-date-entry-format
+      :with-toc nil
+      :with-title nil    ;; <-- Make sure this is here for both publish and preview
+      :html-doctype "html5"
+      :html-html5-fancy t
+      :html-head-include-scripts nil
+      :html-head-include-default-style nil
+      :html-head ,damagebdd-html-head
+      :html-preamble ,damagebdd-html-preamble
+      :html-postamble ,damagebdd-html-postamble
+	   ;:sitemap-file-entry-format "%d - %t"
               )
              ("damagebdd.articles"
               :base-directory ,(expand-file-name "articles" default-directory)
@@ -89,6 +89,23 @@
            )
 
 
+(setq org-confirm-babel-evaluate nil
+      org-html-validate-link nil
+      org-export-in-background nil
+      org-export-use-babel nil
+      org-publish-use-timestamps-flag nil
+      org-publish-list-skipped-files nil
+      org-publish-timestamp-directory "~/.org-timestamps/"
+      org-publish-project-alist org-publish-project-alist
+      vc-handled-backends nil)
+
+(setq-default noninteractive-init t
+              inhibit-startup-screen t
+              inhibit-startup-message t)
+
+;; Disable yes/no prompts in batch mode
+(fset 'yes-or-no-p (lambda (&rest args) t))
+(fset 'y-or-n-p (lambda (&rest args) t))
 
 
 (defun publish-and-serve ()

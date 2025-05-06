@@ -1,128 +1,176 @@
 #+TITLE: DamageBDD - Whitepaper
+#+OPTIONS: title:nil
+#+OPTIONS: num:3
+#+OPTIONS: toc:nil
+#+HTML_HEAD: <link rel="stylesheet" href="./assets/css/style.css">
+#+HTML_HEAD: <link rel="stylesheet" href="./assets/css/legal.css">
+
+#+BEGIN_EXPORT html
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./manual.html">Get Started!</a></li>
+    <li><a href="./pricing.html">Pricing</a></li>
+    <li><a href="./articles.html/">Articles</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./accounts.html">Log in</a></li>
+  </ul>
+</nav>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <!-- Sun Icon -->
+  <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <!-- Moon Icon -->
+  <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+#+END_EXPORT
 
 
-#+INCLUDE: "header.org"
-#+OPTIONS: toc:3      
+
+#+BEGIN_EXPORT html
+<main class="legal-container">
+<style>
+  body {
+    margin-top: 100px; 
+</style>
+
+<h1 style="text-align: center;">Damage Tokens Whitepaper</h1>
+
+	<div style="display: flex; justify-content: center;">
+   		 <p>Introducing Damage Tokens for Continuous Collaborative Software Testing</p>
+	</div>
+
+#+END_EXPORT
+
+#+TOC: headlines
+
+#+BEGIN_EXPORT html
+<section class="legal-section">
+#+END_EXPORT
+* Introduction
+DamageBDD is a next-generation Behavior-Driven Development (BDD) platform designed to meet the needs of modern software development practices. By providing powerful BDD capabilities and large-scale load testing features, DamageBDD empowers teams to define, execute, and manage tests at planetary scale.
+
+With an ever-increasing reliance on complex and interconnected software applications, ensuring their resilience, reliability, and security has become a paramount concern for organizations worldwide.
+
+However, traditional testing methods have limitations when it comes to identifying critical issues or vulnerabilities in software systems. To address this challenge, DamageBDD introduces an innovative feature: Damage Tokens. These native tokens within the DamageBDD ecosystem aim to incentivize adversarial testing, promote continuous resilience, and foster collaboration among developers, testers, and stakeholders.
+
+In the following sections, we will provide a detailed explanation of Damage Tokens and their role in enhancing the value proposition of the DamageBDD platform.
+
+* Understanding Damage Tokens
+
+** What are Damage Tokens?
+
+Damage Tokens are native digital tokens within the DamageBDD ecosystem, serving as an incentive system for users to actively participate in adversarial testing activities. These tokens can be earned by reporting critical issues or vulnerabilities and verified through a robust process involving peer review, expert validation, and automated tools.
+
+** Purposes of Damage Tokens
+
+** Incentivizing Adversarial Testing
+By providing an economic incentive for users to actively search for and report critical issues or vulnerabilities, DamageBDD encourages extensive testing efforts and fosters a culture of continuous improvement within the development community.
+
+** Promoting Continuous Resilience
+Damage Tokens contribute to the overall goal of ensuring the resilience and reliability of software applications by enabling users to test the platform and its integrations under various conditions.
+
+** Fostering Collaboration
+Damage Tokens can be used as a means of collaboration within the DamageBDD community, allowing users to share information about vulnerabilities or best practices for testing.
+
+** Contribution to the Objective of DamageBDD
+
+** Identifying Critical Issues
+By incentivizing users to actively search for and report critical issues or vulnerabilities, DamageBDD ensures that potential threats are identified and addressed in a timely manner.
+
+** Ensuring Continuous Testing
+The economic incentive provided by Damage Tokens encourages ongoing testing efforts.
+
+** Encouraging Collaboration
+By providing a platform for users to share information about vulnerabilities or best practices for testing, DamageBDD fosters a collaborative environment.
+
+* Designing Damage Tokens
+
+** Token Distribution
+
+** Reporting Issues
+Users can report potential issues or vulnerabilities they discover through the DamageBDD platform.
+
+** Reward System
+Based on the severity and impact of the reported issue, users receive a reward in the form of Damage Tokens.
+
+** Verification Process
+This includes peer review by other users, expert validation, and automated tools to detect known vulnerabilities.
+
+** Token Economics
+
+** Earning Tokens
+Users earn Damage Tokens by reporting and verifying issues. These can be spent or traded within the platform.
+
+** Burning Tokens
+Token burning enables access to premium features, governance roles, and incentivizes supply balancing.
+
+** Token Supply
+Token supply adapts to user activity, engagement, and verified reports to remain sustainable.
+
+** Token Verification
+
+** Peer Review
+Community members vet submitted reports.
+
+** Expert Validation
+Experienced professionals review high-severity findings.
+
+** Automated Tools
+DamageBDD uses tools for pattern detection and alerting.
 
 
-* Damage Tokens Whitepaper: Introducing Damage Tokens for Continuous Collaborative Software Testing
+* Benefits and Use Cases
 
-** Introduction
-   
-DamageBDD is a next-generation Behavior-Driven Development (BDD) platform designed to meet the needs of modern software development practices. By providing powerful BDD capabilities and large-scale load testing features, DamageBDD empowers teams to define, execute, and manage tests at planetary scale. With an ever-increasing reliance on complex and interconnected software applications, ensuring their resilience, reliability, and security has become a paramount concern for organizations worldwide. 
+** Incentivizing Adversarial Testing
+Economic rewards help uncover deeper, high-risk vulnerabilities.
 
-However, traditional testing methods have limitations when it comes to identifying critical issues or vulnerabilities in software systems. To address this challenge, DamageBDD introduces an innovative feature: Damage Tokens. These native tokens within the DamageBDD ecosystem aim to incentivize adversarial testing, promote continuous resilience, and foster collaboration among developers, testers, and stakeholders. 
+** Encouraging Continuous Testing
+Ongoing incentives ensure sustained testing across time and releases.
 
-In the following sections, we will provide a detailed explanation of Damage Tokens and their role in enhancing the value proposition of the DamageBDD platform. 
+** Fostering Collaboration
+The token system supports cooperation between users and open sharing.
 
-** Understanding Damage Tokens
-Damage Tokens are a core component of the DamageBDD platform, designed to address specific challenges related to software testing and ensure the resilience, reliability, and security of modern software applications. 
+** Supporting Open-Source Projects
+Encourages contributions to the wider ecosystem by rewarding efforts.
 
-*** What are Damage Tokens?
+** Enhancing Security Research
+Rewards drive exploration of novel attack vectors and lead to advancement in the field.
 
-Damage Tokens are native digital tokens within the DamageBDD ecosystem, serving as an incentive system for users to actively participate in adversarial testing activities. These tokens can be earned by reporting critical issues or vulnerabilities and verified through a robust process involving peer review, expert validation, and automated tools. 
-
-*** Purposes of Damage Tokens
-
-**** Incentivizing Adversarial Testing
-   By providing an economic incentive for users to actively search for and report critical issues or vulnerabilities, DamageBDD encourages extensive testing efforts and fosters a culture of continuous improvement within the development community. 
-**** Promoting Continuous Resilience
-Damage Tokens contribute to the overall goal of ensuring the resilience and reliability of software applications by enabling users to test the platform and its integrations under various conditions. This includes simulating real-world attacks, stress testing, and identifying edge cases that might otherwise go unnoticed.
-**** Fostering Collaboration
-Damage Tokens can be used as a means of collaboration within the DamageBDD community, allowing users to share information about vulnerabilities or best practices for testing. This fosters a culture of knowledge sharing and encourages the development of new tools and techniques to improve the platform and its integrations.
-
-*** Contribution to the Objective of DamageBDD
-
-Damage Tokens directly contribute to the primary objective of DamageBDD by addressing the following challenges:
-
-**** Identifying Critical Issues
-By incentivizing users to actively search for and report critical issues or vulnerabilities, DamageBDD ensures that potential threats are identified and addressed in a timely manner. 
-**** Ensuring Continuous Testing
-The economic incentive provided by Damage Tokens encourages ongoing testing efforts, ensuring that software applications remain resilient and reliable even as they evolve and adapt to new environments and use cases. 
-**** Encouraging Collaboration
-By providing a platform for users to share information about vulnerabilities or best practices for testing, DamageBDD fosters a collaborative environment where knowledge is shared openly and constantly improved upon.
-
-** Designing Damage Tokens
-
-To ensure the optimal functioning and adoption of Damage Tokens within the DamageBDD ecosystem, we propose the following design principles: 
-
-*** Token Distribution
-
-DamageBDD's token distribution model is designed to incentivize users to actively search for and report critical issues or vulnerabilities. This model includes several key components: 
-
-**** Reporting Issues
-Users can report potential issues or vulnerabilities they discover through the DamageBDD platform. These reports are then verified using a robust process involving peer review, expert validation, and automated tools. 
-**** Reward System
-Based on the severity and impact of the reported issue, users receive a reward in the form of Damage Tokens. The more critical the finding, the larger the reward. This incentivizes users to focus their efforts on discovering and reporting truly impactful issues. 
-**** Verification Process
-To prevent duplicate reports or fraudulent claims, DamageBDD incorporates a rigorous verification process for reported issues and associated rewards. This includes peer review by other users in the community, expert validation by recognized security experts, and automated tools to detect known vulnerabilities. 
-   
-*** Token Economics 
-DamageBDD's token economics model is designed to maintain a balance within the ecosystem while encouraging continuous engagement from the community. Key components of this model include: 
-
-**** Earning Tokens
-Users can earn Damage Tokens by reporting critical issues or vulnerabilities and having them verified through the platform. These tokens can then be used for various purposes, such as purchasing additional testing tools or services, collaborating with other users, or even exchanging them for other cryptocurrencies on supported platforms. 
-**** Burning Tokens
-DamageBDD incorporates a mechanism for burning tokens, which helps maintain the token supply and encourages ongoing engagement from the community. Users can burn tokens to access premium testing features, participate in governance decisions, or contribute to the development of new tools and services within the platform.
-**** Token Supply
-The total supply of Damage Tokens is determined by a combination of factors, including the number of critical issues discovered and reported through the platform, user engagement, and community feedback. This ensures that the token supply remains stable and responsive to the needs of the DamageBDD ecosystem. 
-   
-*** Token Verification 
-
-DamageBDD's verification process is designed to ensure accurate and fair distribution of Damage Tokens while preventing fraudulent claims or duplicate reports. Key components of this process include: 
-
-**** Peer Review
-
-Other users in the DamageBDD community are encouraged to review reported issues and provide feedback, helping to identify potential false positives or duplicate reports. 
-**** Expert Validation
-Recognized security experts and specialists in various fields are invited to review critical reports and provide their expertise to validate or refute findings. This helps ensure the accuracy of reported vulnerabilities and the fairness of associated rewards. 
-
-**** Automated Tools
-DamageBDD incorporates a suite of automated tools designed to detect known vulnerabilities and potential false positives, helping to streamline the verification process and reduce the workload on human experts. 
-   
-By implementing these design principles, DamageBDD aims to create an incentive system that encourages active testing efforts, rewards critical findings, and fosters collaboration within the security community. The resulting ecosystem is expected to be more resilient, reliable, and innovative, helping organizations and individuals better protect their software applications from emerging threats. 
-
-** Benefits and Use Cases
-
-DamageBDD's implementation of Damage Tokens offers numerous benefits and use cases that can help improve the software testing landscape, especially when it comes to adversarial testing. Some of these benefits include: 
-
-*** Incentivizing Adversarial Testing
-By offering economic incentives for users to engage in adversarial testing activities, DamageBDD encourages a more comprehensive and thorough examination of software applications, infrastructure, and integrations. This can help organizations identify critical vulnerabilities that might otherwise go unnoticed, ultimately reducing the risk of successful attacks and data breaches. 
-
-*** Encouraging Continuous Testing
-The continuous nature of Damage Tokens and their associated rewards provides an incentive for users to maintain ongoing testing efforts, ensuring that software applications remain resilient and adaptable in the face of emerging threats and new attack vectors. This can be especially important for organizations with large or complex software ecosystems, as it allows them to stay ahead of potential vulnerabilities and ensure their systems are secure at all times. 
-
-*** Fostering Collaboration
-DamageBDD's token-based incentive system encourages users to share knowledge, collaborate on testing efforts, and work together to identify and address critical issues within the software ecosystem. This can lead to improved testing methodologies, new tools and techniques for identifying vulnerabilities, and a stronger, more engaged community of security professionals focused on protecting their applications and infrastructure. 
-
-*** Supporting Open-Source Projects
-DamageBDD's token incentive system can help encourage users to contribute to open-source projects by offering rewards in the form of Damage Tokens for identifying and reporting critical vulnerabilities or improvements within these projects. This can lead to a more secure, reliable, and innovative open-source ecosystem, as well as a stronger community of developers and security professionals collaborating to build better software. 
-
-*** Enhancing Security Research
-By providing economic incentives for researchers to explore new attack vectors and vulnerabilities, DamageBDD can help advance the state of the art in security research. The rewards earned through discovering and reporting critical issues can be used to fund further research, collaborate with other researchers, or even build new businesses focused on improving software security. 
-
-*** Providing a Decentralized Marketplace for Testing Services
+** Providing a Decentralized Marketplace for Testing Services
 DamageBDD's token-based system can create a decentralized marketplace for testing services, enabling users to buy and sell various testing tools, expertise, and resources using Damage Tokens. This can lead to increased competition, better pricing, and more innovative testing solutions that cater to the unique needs of different organizations and applications. 
 
-*** Promoting Transparency and Accountability
+** Promoting Transparency and Accountability
 By leveraging a blockchain-based platform for managing Damage Tokens and associated rewards, DamageBDD ensures transparency and accountability within the software testing ecosystem. This can help build trust between users, organizations, and security professionals, leading to more effective collaboration, improved testing practices, and a stronger focus on protecting critical applications and infrastructure from emerging threats. 
 
-*** Ensuring Behaviour of AI Compliance
+** Ensuring Behaviour of AI Compliance
 Damage Tokens can be used to simulate negative events or scenarios that may impact AI systems and their compliance with regulations. For instance, testers can use Damage Tokens to test how an AI system responds when it is exposed to biased or mislabeled data or when it encounters unexpected inputs or conditions. 
 
-*** Compliance and Regulations
+** Compliance and Regulations
 Damage Tokens can help teams ensure compliance with various regulations and standards related to software security, such as HIPAA, PCI-DSS, and GDPR. By simulating potential vulnerabilities and testing the system's response to damage caused by these events, teams can demonstrate their adherence to regulatory requirements and minimize the risk of non-compliance penalties or reputational damage. 
 
-*** Verifying Infrastructure Configuration
+** Verifying Infrastructure Configuration
 Damage Tokens can be used to test the configuration of various infrastructure components, such as firewalls, load balancers, and databases. For example, testers can use Damage Tokens to simulate network traffic that bypasses a firewall or test how a database responds when it is subjected to SQL injection attacks. 
 
-*** Wide Range of Behaviours
+** Wide Range of Behaviours
 Damage Tokens can cover a wide range of behaviours, including those that are difficult or impossible to define explicitly. By defining behaviour in terms of the effects of damage tokens, teams can test for complex scenarios and edge cases that might otherwise be overlooked. Additionally, because Damage Tokens can be generated under human supervision, they provide a flexible and scalable approach to testing that can adapt to changing requirements and threats over time. 
 
 
 In summary, Damage Tokens offer significant benefits for software testing, particularly in the area of adversarial testing. They incentivize ongoing testing efforts, foster collaboration within the security community, support open-source projects, enhance security research, and provide a decentralized marketplace for testing services. These benefits can ultimately help organizations and individuals better protect their applications, infrastructure, and data from emerging threats and vulnerabilities.  
 
-** Implementation and Integration
+* Implementation and Integration
 DamageBDD node is designed as a distributed Erlang application, built for scale and high availability. The use of Erlang ensures that DamageBDD can handle large-scale testing operations and maintain robust fault tolerance through OTP processes management. 
 
 To implement DamageTokens on the Aeternity blockchain, DamageBDD integrates with the official Aeternity Erlang client library. This library provides a convenient interface to interact with the Aeternity network, enabling DamageBDD nodes to create, transfer, and burn DamageTokens as needed while leveraging the security and scalability of Aeternity's proof-of-work consensus mechanism. 
@@ -136,24 +184,24 @@ To ensure efficient and reliable DamageToken operations, DamageBDD employs sever
 3. Scalable network communication: To support large-scale testing operations and handle multiple concurrent DamageToken transactions, DamageBDD is designed with scalable communication strategies such as using multiple Erlang nodes for distributing workload and handling increased traffic. Additionally, DamageBDD may employ load balancing or clustering solutions to optimize performance and ensure high availability. 
 4. Monitoring and alerting: DamageBDD includes robust monitoring and alerting capabilities for DamageToken events and test results, providing real-time insights into the distribution of damage tokens across different tests and allowing quick identification and response to critical issues or failures.
 
-*** Proof Of Contribution (PoC) implementation.
+** Proof Of Contribution (PoC) implementation.
 
 DamageBDD will use a custom implementation of a Proof of Contribution algorithm. The PoC consensus algorithm  rewards nodes based on their past contributions to the network. Nodes can earn Damage Tokens by demonstrating their commitment to the network through previous actions. PoC incentivizes validators to act honestly and consistently, as their future reward depends on their past behavior. 
 
 The PoC consensus algorithm for DamageBDD can be implemented by combining multiple methods to ensure consensus and accuracy: 
 
-1. **Fault injection and error reporting:** In this model, nodes periodically inject faults into the system under test (SUT) and report the observed errors to the network. The network validates these reports, and nodes that consistently provide accurate and useful information are rewarded with new DamageTokens or other incentives. 
-2. **Automated testing:** In this model, nodes execute a set of predefined tests against the SUT and report their results to the network. Nodes that submit accurate test results within a specified time frame are rewarded with DamageTokens. The system can also periodically rotate the tests to ensure comprehensive coverage and prevent potential gaming behaviors. 
-3. **Live testing:** In this model, nodes actively monitor the SUT while it's in production use and report any issues or vulnerabilities they detect. Nodes that submit valid and valuable reports are rewarded with DamageTokens. To mitigate the risk of false positives, the network can employ a consensus mechanism for validation and verification of submitted reports. 
-4. **Combining multiple testing methods:** In this model, nodes utilize various testing techniques such as automated tests, fault injection, and live monitoring to maximize coverage and effectiveness in uncovering vulnerabilities and issues. Nodes that demonstrate strong performance across all test categories are rewarded with DamageTokens. 
-5. **Reputation system:** Implementing a reputation system where nodes earn reputation points based on their past contributions, accuracy, and timeliness in reporting vulnerabilities or errors. These reputation points can be used to determine the weight of their submissions and influence the overall consensus process. 
-6. **Graded rewards:** Incentivize more comprehensive or valuable testing by offering graded rewards for different levels of contributions. For example, nodes that identify critical bugs or security vulnerabilities could receive a larger reward than those reporting trivial issues. 
-7. **Multi-factor verification:** Designing a consensus mechanism that requires multiple nodes to confirm and verify reported issues before they are considered valid and incentivized. This can help prevent false positives and reduce potential for malicious actors manipulating the system. 
-8. **Scalability:**  DamageBDD was designed with scalability in mind, ensuring it can efficiently handle large numbers of nodes or complex systems under test without compromising performance or accuracy. 
-9. **Interoperability:** Develop a modular and flexible consensus algorithm that allows for easy integration with various testing frameworks, programming languages, and platforms, enabling broader adoption across diverse software ecosystems.
-10. **Security:** Ensure the PoC consensus algorithm prioritizes security by incorporating advanced encryption techniques, access control measures, and robust validation processes to prevent unauthorized submissions or manipulation of reported issues. 
+1. *Fault injection and error reporting:* In this model, nodes periodically inject faults into the system under test (SUT) and report the observed errors to the network. The network validates these reports, and nodes that consistently provide accurate and useful information are rewarded with new DamageTokens or other incentives. 
+2. *Automated testing:* In this model, nodes execute a set of predefined tests against the SUT and report their results to the network. Nodes that submit accurate test results within a specified time frame are rewarded with DamageTokens. The system can also periodically rotate the tests to ensure comprehensive coverage and prevent potential gaming behaviors. 
+3. *Live testing:* In this model, nodes actively monitor the SUT while it's in production use and report any issues or vulnerabilities they detect. Nodes that submit valid and valuable reports are rewarded with DamageTokens. To mitigate the risk of false positives, the network can employ a consensus mechanism for validation and verification of submitted reports. 
+4. *Combining multiple testing methods:* In this model, nodes utilize various testing techniques such as automated tests, fault injection, and live monitoring to maximize coverage and effectiveness in uncovering vulnerabilities and issues. Nodes that demonstrate strong performance across all test categories are rewarded with DamageTokens. 
+5. *Reputation system:* Implementing a reputation system where nodes earn reputation points based on their past contributions, accuracy, and timeliness in reporting vulnerabilities or errors. These reputation points can be used to determine the weight of their submissions and influence the overall consensus process. 
+6. *Graded rewards:* Incentivize more comprehensive or valuable testing by offering graded rewards for different levels of contributions. For example, nodes that identify critical bugs or security vulnerabilities could receive a larger reward than those reporting trivial issues. 
+7. *Multi-factor verification:* Designing a consensus mechanism that requires multiple nodes to confirm and verify reported issues before they are considered valid and incentivized. This can help prevent false positives and reduce potential for malicious actors manipulating the system. 
+8. *Scalability:*  DamageBDD was designed with scalability in mind, ensuring it can efficiently handle large numbers of nodes or complex systems under test without compromising performance or accuracy. 
+9. *Interoperability:* Develop a modular and flexible consensus algorithm that allows for easy integration with various testing frameworks, programming languages, and platforms, enabling broader adoption across diverse software ecosystems.
+10. *Security:* Ensure the PoC consensus algorithm prioritizes security by incorporating advanced encryption techniques, access control measures, and robust validation processes to prevent unauthorized submissions or manipulation of reported issues. 
    
-** Security and Privacy
+* Security and Privacy
 
  When using Damage Tokens within the context of the DamageBDD platform, there are several security and privacy concerns that need to be addressed to ensure a secure testing environment: 
  
@@ -172,17 +220,17 @@ The PoC consensus algorithm for DamageBDD can be implemented by combining multip
 13. Regular updates and patches: Implementing regular updates and patches to the DamageBDD platform, smart contracts, and related infrastructure is essential for addressing any known vulnerabilities or security issues that could impact the safe usage of Damage Tokens. By keeping these components up-to-date, you can help minimize the risk of potential attacks and ensure a more stable testing environment.
 14. Transparency: Providing transparency into the functioning and use of Damage Tokens is crucial for promoting responsible usage within the DamageBDD community. This may include publishing regular security reports, disclosing known vulnerabilities, and maintaining open communication channels for addressing user concerns or questions. By fostering a culture of trust and transparency, you can help build confidence in the platform and encourage safe participation from all test participants. 
 
-** Conclusion and Future Work
+* Conclusion and Future Work
 
    In this groundbreaking whitepaper, we introduce DamageBDD as a transformative testing tool designed to revolutionize the software testing landscape. By harnessing the power of incentivized collaborative testing, DamageBDD aspires to significantly enhance the overall quality, security, and reliability of various systems while fostering a responsible, ethical, and inclusive community. 
    
-*** Key Achievements:
+** Key Achievements:
 1. Developed a novel approach for collaborative testing by introducing the Damage Token mechanism, which encourages active participation in testing efforts.
 2. Demonstrated the adaptability of DamageBDD to diverse target systems through software APIs.
 3. Established a framework for responsible usage and safety, emphasizing access control, permissions, user education, and transparency.
 4. Leveraged real-world scenarios and test cases to optimize testing efforts and identify vulnerabilities effectively.
 
-*** Future Horizons:
+** Future Horizons:
 1. Pursuing advanced research in the DamageToken mechanism, refining incentive structures for fair and effective rewards.
 2. Expanding DamageBDD's reach to a multitude of software platforms and technologies, fostering interoperability and collaboration.
 3. Enhancing security features to protect user data and prevent unauthorized access, ensuring the utmost trust and confidence in the platform.
@@ -190,3 +238,12 @@ The PoC consensus algorithm for DamageBDD can be implemented by combining multip
 5. Engaging in ethical discussions and collaboration within the community to address any concerns or potential misuse, upholding the highest moral standards.
 
 With unwavering commitment and anticipation, we embark on this journey to fundamentally reshape the way we verify software and technology. Together, as a collective force, we will harness the power of DamageBDD to drive advancements in scientific, logic, and evidence-based verification processes, ultimately improving the trustworthiness and dependability of technology for generations to come. 
+
+#+BEGIN_EXPORT html
+</section></main>
+#+END_EXPORT
+
+
+#+BEGIN_EXPORT html
+<script src="./assets/js/theme.js"></script>
+#+END_EXPORT
