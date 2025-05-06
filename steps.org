@@ -1,4 +1,6 @@
 #+Title: Damagebdd - Steps Manual
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./assets/css/steps.css" />
 
 #+INCLUDE: "header.org"
 #+OPTIONS: toc:2      

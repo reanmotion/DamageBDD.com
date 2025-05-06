@@ -1,4 +1,6 @@
 #+TITLE: Index
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="index.css" />
 
 #+INCLUDE: "theindex.inc"
 

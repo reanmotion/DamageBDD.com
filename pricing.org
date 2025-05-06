@@ -1,43 +1,119 @@
-#+TITLE: Pricing - DamageBDD
-
-#+INCLUDE: "header.org"
-
-* Pricing Plans for DamageBDD
-
-
-We calculate pricing based on the number of steps and their
-implementations. Each step is individually priced based on the
-resources used and complexity involved. If you run steps concurrently,
-each execution will count against the total number of step
-executions. For example, running one step 10 times will deduct 10
-Damage Tokens from your balance.
-
-Please note that pricing may be subject to change as we continue to
-update and improve our product. We recommend checking this page
-regularly for any updates.
-
-** Step Based Pricing
-
-Here is a breakdown of our step-based pricing:
-
-1 Damage Token = 100 Satoshis (0.000001 BTC) per token.
-
-| Step          | Price in Sats |
-|---------------|---------------|
-| Simple Step   | 1 DAMAGE      |
-| Selenium Step | 500 DAMAGE    |
-| Appium Step   | 1000 DAMAGE   |
-
-
-We hope this pricing information is clear and easy to understand. If
-you have any further questions or need assistance, please don't
-hesitate to contact our support team.
-
-** Consultation Pricing
-
-If you're looking to quickly integrate DamageBDD into your team's
-workflow, book a consultation with DamageBDD's experts.
+#+TITLE: Pricing – DamageBDD
+#+HTML_HEAD: <link rel="stylesheet" href="./assets/css/style.css">
+#+HTML_HEAD: <link rel="stylesheet" href="./assets/css/base.css">
+#+OPTIONS: html-style:nil toc:nil num:nil title:nil
 
 #+BEGIN_EXPORT html
-<a href="https://calendly.com/melit-stevenjoseph/15min">Schedule a Call with DamageBDD Now</a>
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./manual.html">Get Started!</a></li>
+    <li><a href="./pricing.html">Pricing</a></li>
+    <li><a href="./articles.html/">Articles</a></li>
+    <li><a href="./about.html">About</a></li>
+    <li><a href="./accounts.html">Log in</a></li>
+  </ul>
+</nav>
+
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <!-- Sun Icon -->
+  <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <!-- Moon Icon -->
+  <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<main class="legal-container">
+<style>
+  body {
+    margin-top: 60px; 
+</style>
+
+<h1 style="text-align: center; font-weight: 800;">Pricing Plans for DamageBDD</h1>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<main class="legal-container">
+<style>
+  body {
+    margin-top: 40px; 
+</style>
+
+#+END_EXPORT
+
+*Step-based execution model
+
+We calculate pricing based on the number of steps and their implementations.  
+Each step is priced individually, depending on the resources used and its complexity.
+
+Running one step 10 times will deduct 10 Damage Tokens.  
+If you run steps concurrently, each execution still counts toward your token balance.
+
+#+BEGIN_EXPORT html
+<div class="notice">
+  <p>
+    Please note that pricing may be subject to change as we continue to improve the product.  
+    We recommend checking this page regularly for updates.
+  </p>
+</div>
+#+END_EXPORT
+
+*Step-Based Pricing
+
+#+BEGIN_EXPORT html
+<p class="token-info">1 Damage Token = 100 Satoshis (0.000001 BTC) per token.</p>
+
+<div class="table-container">
+  <table class="pricing-table">
+    <thead>
+      <tr>
+        <th>Step</th>
+        <th>Price in Sats</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Simple Step</td>
+        <td>1 DAMAGE</td>
+      </tr>
+      <tr>
+        <td>Selenium Step</td>
+        <td>500 DAMAGE</td>
+      </tr>
+      <tr>
+        <td>Appium Step</td>
+        <td>1000 DAMAGE</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+#+END_EXPORT
+
+
+We hope this pricing information is clear.  
+If you have any questions or need assistance, please contact our support team.
+
+* Consultation Pricing
+
+If you're looking to integrate DamageBDD quickly, book a consultation with one of our experts.
+
+#+BEGIN_EXPORT html
+<a href="https://calendly.com/melit-stevenjoseph/15min" class="cta-button">
+  Schedule a Call with DamageBDD Now
+</a>
+</main>
+<script src="./assets/js/theme.js"></script>
 #+END_EXPORT

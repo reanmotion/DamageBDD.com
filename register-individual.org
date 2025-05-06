@@ -1,45 +1,96 @@
-#+TITLE: Individual Registration - DamageBDD
-
-
-#+INCLUDE: "header.org"
-* Register as individual customer.
+#+TITLE: Regiser - Individual
+#+OPTIONS: html-style:nil title:nil
+#+HTML_HEAD: <link rel="stylesheet" href="./assets/css/style.css">
+#+HTML_HEAD: <link rel="stylesheet" href="./assets/css/forms.css">
 
 #+BEGIN_EXPORT html
-<form id="kycForm" action="/accounts/create" method="post">
-  <input type="hidden" name="csrf_token" value="your_csrf_token_here">
-  
-  <label for="full_name">Full Name:</label>
-  <input type="text" id="full_name" name="full_name" ><br><br>
-<label for="email">Email:</label>
-<input type="text" id="email" name="email" required><span style="color: red;">* required</span><br><br>
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="./index.html">Home</a></li>
+    <li><a href="./manual.html">Get Started!</a></li>
+    <li><a href="./pricing.html">Pricing</a></li>
+    <li><a href="./articles.html/">Articles</a></li>
+    <li><a href="./about.html">About</a></li>
+  </ul>
+</nav>
 
-  <!--<label for="dateOfBirth">Date of Birth:</label>
-  <input type="date" id="dateOfBirth" name="dateOfBirth" required><br><br>
-
-  <label for="nationality">Nationality:</label>
-  <input type="text" id="nationality" name="nationality" required><br><br>
-
-  <label for="address">Address:</label>
-  <textarea id="address" name="address" required></textarea><br><br>
-
-  <label for="idDocument">ID Document (Passport, Driver’s License, etc.):</label>
-  <input type="file" id="idDocument" name="idDocument" required><br><br>-->
-
-  <button type="submit">Submit</button>
-</form>
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+  <!-- Sun Icon -->
+  <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <circle cx="12" cy="12" r="5"></circle>
+    <line x1="12" y1="1" x2="12" y2="3"></line>
+    <line x1="12" y1="21" x2="12" y2="23"></line>
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+    <line x1="1" y1="12" x2="3" y2="12"></line>
+    <line x1="21" y1="12" x2="23" y2="12"></line>
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+  </svg>
+  <!-- Moon Icon -->
+  <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 A7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
 #+END_EXPORT
-** Using Curl
-#+BEGIN_EXPORT html
-<pre>
 
-<code class="language-shell">
-curl -s 'https://run.damagebdd.com/accounts/create' \
-        -H 'Content-Type: application/x-yaml' \
-        -d '
+
+#+BEGIN_EXPORT html
+<style>
+  body {
+    margin-top: 100px; 
+</style>
+
+<main class="registration-container">
+  <h1 style="text-align: center;">Individual Registration</h1>
+  
+
+	<div class="form-intro" style="display: flex; justify-content: center;">
+   		 <p>To get started with DamageBDD, please complete the registration form below.</p>
+	</div>
+
+
+  <div class="registration-methods">
+
+    <section class="web-form">
+      <h2>Register via Web Form</h2>
+      <form id="individualRegistration" action="/accounts/create" method="post" class="registration-form">
+        <input type="hidden" name="csrf_token" value="your_csrf_token_here">
+        
+        <div class="form-group">
+          <label for="full_name">Full Name</label>
+          <input type="text" id="full_name" name="full_name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email<span class="required">*</span></label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <form action="#" method="post" style="padding: 1rem; border: 1px solid #ccc;">
+ 		<button type="submit" style="background-color: #7279F4; color: white; padding: 0.75rem 1.5rem; font-size: 1rem; border: none; border-radius: 6px; cursor: pointer;">
+    			Create Account
+  		</button>
+
+      </form>
+    </section>
+
+    <section class="api-registration">
+      <h2>Register via API</h2>
+      <p>Alternatively, you can register using our API endpoint:</p>
+      <pre class="code-block"><code class="language-bash">curl -s 'https://run.damagebdd.com/accounts/create' \
+  -H 'Content-Type: application/x-yaml' \
+  -d '
 ---
 fullName: "John Doe"
-email: "john.doe@example.com"
-'
-</code>
-</pre>
+email: "john.doe@example.com"'</code></pre>
+    </section>
+
+  </div>
+</main>
+<script src="./assets/js/form-validation.js"></script>
+#+END_EXPORT
+
+#+BEGIN_EXPORT html
+<script src="./assets/js/theme.js"></script>
 #+END_EXPORT
